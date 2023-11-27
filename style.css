@@ -61,7 +61,8 @@ nav li {
     display: flex;
     align-items: center;
     padding: 32px 24px;
-    background-color: #f0f0f0;   
+    background-color: #f0f0f0; 
+    max-width: 100%;  
 }
 
 .image-container {
@@ -89,11 +90,73 @@ nav li {
 }
 
 .hero button {
-        background-color: #4A4A4A;
-        color: white;
-        width: 400px;
-        height: 40px;
-        font-size: 18px;
-        padding: 8px;
-        border: none;
+    background-color: #4A4A4A;
+    color: white;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+}
+
+.infomation {
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.main-blog-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main-blog-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.side-blogs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.blog-content-1,
+.blog-content-2,
+.blog-content-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 16px;
+}
+
+.blog-content-1 img,
+.blog-content-2 img,
+.blog-content-3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.blog-content-1  div,
+.blog-content-2  div,
+.blog-content-3  div {
+    flex-grow: 1;
+}
+.blog-content-1 h2,
+.blog-content-2 h2,
+.blog-content-3 h2 {
+    margin: 0;
+}
+
+.blog-content-1 p,
+.blog-content-2 p,
+.blog-content-3 p{
+    margin: 8px 0;
 }
